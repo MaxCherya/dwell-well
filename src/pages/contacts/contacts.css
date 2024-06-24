@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.very-bg {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20rem;
+    background-color: #2E7D7F;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .img-block {
+        display: none;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+    .img-block {
+        display: none;
+    }
+}
+
+#adm-prof {
+    font-size: 0.5rem;
+}
+
+.text-block1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin-left: 5rem;
+}
+
+.block1 h1 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 4rem;
+    color: #F2F2F2;
+    width: 95%;
+}
+
+.block1 p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1rem;
+    width: 50%;
+    color: #F2F2F2;
+}
+
+@media (max-width: 480px) {
+
+    .block1 h1 {
+        font-size: 1.95rem;
+    }
+
+    .block1 p {
+        font-size: 1rem;
+        text-align: center;
+        width: 90%;
+    }
+
+    .text-block1 {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1000px) and (max-width: 1200px) {
+    .block1 h1 {
+        font-size: 1.95rem;
+        text-align: center;
+    }
+
+    .block1 p {
+        font-size: 1rem;
+        text-align: center;
+        width: 90%;
+    }
+
+    .text-block1 {
+        margin-left: 0;
+    }
+}
+
+.block1 img {
+    width: 35rem;
+    clip-path: circle(74.4% at 11% 49%);
+    transform: scaleX(-1);
+}
+
+.block2 {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 31rem;
+    align-content: center;
+    justify-content: center;
+    gap: 7rem;
+    margin-top: -2rem;
+}
+
+@media (max-width: 480px) {
+
+    .block2 {
+        flex-direction: column;
+        height: auto;
+        margin-top: 3rem;
+    }
+}
+
+.block2-container {
+    width: 20rem;
+    height: 100%;
+    background-color:#333333;
+    z-index: 1000;
+    border-radius: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #F2F2F2;
+    justify-content: space-between;
+    filter: drop-shadow(0 0 3px black);
+    padding: 3rem;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+
+    .block2-container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1000px) and (max-width: 1200px) {
+    .block2-container {
+        text-align: center;
+    }
+}
+
+.block2-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block2-wrapper h1 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.7rem;
+}
+
+.block2-wrapper p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+#phone {
+    font-size: 1.5rem;
+}
+
+#email {
+    font-size: 2rem;
+}
+
+.block3 {
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+    background: url('https://ideogram.ai/assets/image/lossless/response/KsPzKHIJTt6BmH0Dp0-rMg');
+    background-size: cover;
+    padding: 1rem;
+}
+
+.block3 p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #F2F2F2;
+}
+
+.sign-in {
+    background-color: rgba(0, 0, 0, 0.626);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center; /* Center the contents horizontally */
+    align-items: center; /* Center the contents vertically */
+    width: 100%;
+    height: 100%;
+}
+
+.sign-in button {
+    width: 15rem;
+    height: 3rem;
+    background-color: #38A3A5;
+    border: none;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+.sign-in button:hover {
+    background-color: #2E7D7F;
+}
+
+.sign-out {
+    background-color: rgba(0, 0, 0, 0.626);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center; /* Center the contents horizontally */
+    align-items: center; /* Center the contents vertically */
+    width: 100%;
+    height: 100%;
+}
+
+.sign-out img {
+    width: 1rem;
+}
+
+.sign-out button {
+    width: 5rem;
+    height: 2rem;
+    background-color: #38A3A5;
+    border: none;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+.sign-out button:hover {
+    background-color: #2E7D7F;
+}

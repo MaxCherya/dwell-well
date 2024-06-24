@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    white-space: normal;
+    overflow: hidden;
+}
+
+body {
+    background-color: #F5F3E5;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.271);
+}
+
+header video {
+    object-fit: cover;
+}
+
+.text-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-wrapper h1 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 8rem;
+    color: #38A3A5;
+    filter: drop-shadow(0.1rem 0.1rem 0.1rem black)
+}
+
+.text-wrapper p {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1rem;
+    font-style: normal;
+    width: 70%;
+    color: #C2E0FC;
+    filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 480px) {
+    .text-wrapper h1 {
+        font-size: 2rem;
+    }
+
+    .text-wrapper p {
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    header video {
+        display: none;
+    }
+
+    header {
+        background-color: #38A3A5;
+        width: 100svw;
+        height: 100svh;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1000px) and (max-width: 1200px) {
+    .text-wrapper h1 {
+        font-size: 4rem;
+    }
+
+    .text-wrapper p {
+        font-size: 1.7rem;
+    }
+}

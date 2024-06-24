@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    width: 100%;
+    height: 10rem;
+    text-align: center;
+    color: #F2F2F2;
+    background-image: url('../../imgs/shop-bg.jpg');
+}
+
+.head h1 {
+    width: 70%;
+    font-size: 3rem;
+    margin-left: 15%;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+@media (max-width: 480px) {
+    .head h1 {
+        font-size: 1.71rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1000px) and (max-width: 1200px) {
+    .head h1 {
+        font-size: 2.25rem;
+    }
+}
+
+header h1 {
+    font-size: 1rem;
+}
+
+body {
+    min-height: 100svh;
+    width: 100svw;
+    overflow: auto;
+}
+
+main {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+.foot {
+    position: inherit;
+    bottom: 0;
+    width: 100%;
+    height: 10rem;
+    background-color: #2E7D7F;
+    padding: 1.5rem;
+    color: #ffffff;
+}
+
+.foot {
+    text-align: center;
+    list-style-type: none;
+}
+
+.foot img {
+    width: 4rem;
+    height: auto;
+}
+
+.foot h1 {
+    margin-top: -0.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+.foot p {
+    font-size: 0.4rem;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+.catalog {
+    width: 80vw;
+    max-width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* Responsive grid columns */
+    gap: 3.8rem;
+    /* Space between grid items */
+    padding: 0.3rem;
+}
+
+.product-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+#delete-product {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.product-wrapper {
+    background-color: #fff;
+    border: 0.1rem solid #ddd;
+    border-radius: 0.1rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 2rem;
+    width: 15rem;
+    height: 30rem;
+    transition: all ease-in-out 0.2s;
+}
+
+.product-wrapper:hover {
+    border-color: black;
+}
+
+.product-wrapper img {
+    height: auto;
+    width: 8rem;
+    cursor: pointer;
+}
+
+.product-wrapper h1 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    width: 100%;
+    font-size: 1.7rem;
+    margin-top: 0.3rem;
+    margin-bottom: 1.3rem;
+    cursor: pointer;
+}
+
+#add-to-cart-btn {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    width: 7rem;
+    height: 3rem;
+    border-radius: 3rem;
+    border: none;
+    background-color: #38A3A5;
+    color: #F2F2F2;
+    transition: all ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+#add-to-cart-btn:hover {
+    background-color: #2E7D7F;
+    filter: drop-shadow(0 0.1rem 1rem rgba(0, 0, 0, 0.267));
+    width: 7.5rem;
+    height: 3.5rem;
+}
+
+#more-btn {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 0.7rem;
+    margin-top: 1rem;
+    width: 7rem;
+    height: 3rem;
+    border-radius: 3rem;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #C2E0FC;
+    color: #000000;
+    transition: all ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+#more-btn:hover {
+    border: 1px solid black
+}
+
+#price-tg {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 2.1rem;
+    width: 100%;
+    border-radius: 2%;
+    background-color: #F5F3E5;
+    color: #333333;
+}
+
+.product-wrapper a {
+    text-decoration: none;
+}
+
+#add-product-btn {
+    position: absolute;
+    right: 5rem;
+    width: 8rem;
+    height: 1.5rem;
+    border-radius: 2.5rem;
+    cursor: pointer;
+}
+
+#add-product-btn:hover {
+    background-color: #00000038;
+}
+
+.ap {
+    position: relative;
+    margin-top: 3rem;
+    width: 100%;
+    min-height: 3rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apext {
+    width: 70%;
+    height: auto;
+    min-height: 30rem;
+    background-color: #333333;
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.apext input {
+    background-color: #2E7D7F;
+    color: #F2F2F2;
+}
+
+.apext input:focus {
+    outline: none;
+}
+
+.apext h1 {
+    font-size: 1.5rem;
+    color: #F2F2F2;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+.apext p {
+    color: #F2F2F2;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+.text-editor {
+    width: 100%;
+    height: auto;
+    min-height: 10rem;
+    overflow: auto;
+}
+
+#editor-itself {
+    background: #2E7D7F;
+}
+
+.name-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15rem;
+}
+
+@media (max-width: 480px) {
+    .name-price {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+/* Default button styles */
+#sbmt-btn {
+    border-radius: 2rem;
+    height: 3rem;
+    width: 10rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    /* Add transition for smooth animation */
+}
+
+/* Active button styles */
+#sbmt-btn.active {
+    background-color: #F7813E;
+    /* Example: change background color when active */
+    color: #000000;
+    /* Example: change text color when active */
+}
+
+/* Hover animation for the active button */
+#sbmt-btn.active:hover {
+    background-color: #00000081;
+    color: #F2F2F2;
+    transform: scale(1.05);
+    /* Example: scale up on hover */
+}
+
+/* Disabled button styles */
+#sbmt-btn:disabled {
+    background-color: #cccccc;
+    /* Example: gray background when disabled */
+    color: #666666;
+    /* Example: darker text color when disabled */
+    cursor: not-allowed;
+    /* Change cursor to not-allowed when disabled */
+}
+
+/* Disabled button should not have hover effect */
+#sbmt-btn:disabled:hover {
+    background-color: #cccccc;
+    color: #666666;
+    transform: none;
+    /* Disable scale on hover */
+}
+
+.exit-btn-ad {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 5rem;
+    color: #F2F2F2;
+    cursor: pointer;
+}
+
+.rusure-container {
+    position: fixed;
+    width: 100svw;
+    height: 100svh;
+    top: 0;
+    background-color: #0000007d;
+    z-index: 1000;
+}
+
+.rusure-wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    height: 40%;
+    background-color: #2E7D7F;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.rusure-wrapper h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.rusure-btns {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.rusure-btns button {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 2.5rem;
+}
+
+.rusure-btns button:hover {
+    background-color: #333333;
+    color: #F2F2F2;
+    cursor: pointer;
+}

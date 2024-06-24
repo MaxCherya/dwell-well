@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.orders-container {
+    width: 100svw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.order-wrapper {
+    margin-top: 3rem;
+    width: 70%;
+    height: auto;
+    background-color: #2E7D7F;
+    border-radius: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 480px) {
+    .order-wrapper {
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+.order-wrapper h1{
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+#receiper-email {
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+.country-region-wrapper {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.item-ordered-wrapper {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.294);
+    color: #F2F2F2;
+    padding: 1rem;
+    width: 100%;
+}
+
+#ordered-product-name {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.item-ordered-wrapper img {
+    width: 10rem;
+    height: auto;
+    border-radius: 1rem;
+}
+
+#btn-done-ordered {
+    width: 5rem;
+    height: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 2.5rem;
+}
+
+#btn-done-ordered:hover {
+    background-color: #333333;
+    color: #F2F2F2;
+    cursor: pointer;
+}
